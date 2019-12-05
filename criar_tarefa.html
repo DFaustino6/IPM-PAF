@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <hmtl>
-<head>
-	<title>Dia Aberto</title>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-</head>
-<body>
 
-<!--Dia Aberto Ualg 20-->
-<div class="container" style="background-color: #0099ff; width: 100%;">
-	<h1 style="color: white;text-align: center;size: ">Dia Aberto UAlg 20</h1>
-</div>
-<!--End-->
+  <head>
+    <title>Dia Aberto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://streamonion.com/kinnith/fontawesome/css/all.css"></link>
+  </head>
 
-<!--Navbar-->
-<nav class="navbar navbar-inverse" style="background-color: grey; border-color: grey">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" style="color: white" href="#">Home</a>
-		</div>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a style="color: white;">Welcome Professor</a></li>
-			<li><a href="#" style="color: white">Logout</a></li>
-		</ul>
-	</div>
-</nav>
-<!--End_Navbar-->
+  <body>
 
-<div class="container" style="width: 100%;">
-	<div class="row">
-		<div class="col-sm-3">
-			<div class="well text-center">
-				<img src="img_avatar1.png" style="width: 45%">
-			</div>
-		</div>
-		<div class="col-sm-9">
-			<div class="well text-center">
-				<h3>Informações Pessoais</h3>
-			</div>
-		</div>
-	</div>
-</div>
+    <!--Dia Aberto Ualg 20-->
+    <div class="container" style="background-color: #0099ff; width: 100%;">
+      <h1 style="color: white;text-align: center;size: ">Dia Aberto UAlg 20</h1>
+    </div>
+    <!--End-->
 
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse" style="background-color: grey; border-color: grey">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" style="color: white" href="#">Home</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="color: white;">Welcome Professor</a></li>
+          <li><a href="#" style="color: white">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--End_Navbar-->
+    <!--Breadcrumb-->
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Criar Atividade</a></li>
+    </ul>
+    <!--End_Breadcrumb-->
+    <div class="container" style="width: 70%;">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h2 style="text-align: center">Criar Atividade</h2>
+            <hr>
+            <!--Form-->
+            <form class="form-vertical" action="#" method="POST">
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="post">Descrição da tarefa</label>
+                <div>
+                  <textarea cols="2" rows="5" class="form-control" id="post" name="content" style="resize: vertical;" required></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="post">Escolha o colaborador</label>
+                <div>
+                  <select class="form-control" id="sel1">
+                    <option>Colaborador 1</option>
+                    <option>Colaborador 2</option>
+                    <option>Colaborador 3</option>
+                    <option>Colaborador 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group" style="padding-top: 2%">
+                <button type="submit" name="submit" class="btn btn-success"><i class="fas fa-pencil"></i>&nbsp;Submeter</button>
+                <a href="#" role="button" class="btn btn-danger"><i class="fas fa-times"></i>&nbsp;Cancelar</a>
+              </div>
+            </form>
+            <!--End_Form-->
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </body>
+
+  </html>
