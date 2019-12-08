@@ -28,11 +28,53 @@
 </nav>
 <!--End_Navbar-->
 
-<!--Progress bar-->
-<div class="progress">
-  <div class="progress-bar" style="width:33%">Recolha de dados</div>
+<div class="col" style="padding-top: 1%">
+	<div class="row-sm-12">
+		<!--Progress bar-->
+		<div class="progress bg-secondary" style="height:40px">
+  			<div class="progress-bar bg-dark" style="width:30%;height:40px"><h6>Responsavel</h6></div>
+  			<div class="progress-bar bg-dark" style="width:20%;height:40px">
+  				<div class="text-right">
+  					<h6>Recolha d</h6>
+  				</div>
+  			</div>
+  			<div class="progress-bar bg-secondary" style="width:20%;height:40px">
+  				<div class="text-left">
+  					<h6>e Dados</h6>
+  				</div>
+  			</div>
+			<div class="progress-bar bg-secondary" style="width:30%;height:40px"><h6>Atividades</h6></div>
+  		</div>
+
+	</div>
+		<!--End of Progress Bar-->
+
+	<div class="row-sm-12" style="padding-top: 2%">
+		<div class="card card-body bg-light">
+			<form action=".php" method="POST">
+				<div class="form-inline">
+					<label for="localidade" style="padding-right: 1%">Localidade</label>
+  					<input type="Localidade" class="form-control" placeholder="" id="Localidade">
+  				</div>
+  				<div class="form-inline" style="padding-top: 2%">
+  					<label for="ano" style="padding-right: 1%">Ano</label>
+  					<input type="Ano" class="form-control" placeholder="" id="Ano" style="max-width: 5%">
+  					<label for="turma" style="padding-right: 1%; padding-left: 5%">Turma</label>
+  					<input type="Turma" class="form-control" placeholder="" id="Turma" style="max-width: 5%">
+  					<label for="area_cientifica" style="padding-right: 1%; padding-left: 5%">Area Cientifica</label>
+  					<input type="Area_Cientifica" class="form-control" placeholder="" id="Area_Cientifica">
+  				</div>
+  				<div class="form-inline" style="padding-top: 2%">
+  					<label for="n_alunos" style="padding-right: 1%">Numero de alunos</label>
+  					<input type="n_alunos" class="form-control" placeholder="" id="n_alunos" style="max-width: 10%">
+  				</div>
+			</form>
+		</div>
+	</div>
+
+
+
 </div>
-<!--End of Progress Bar-->
 
 
  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
