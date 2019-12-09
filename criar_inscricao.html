@@ -29,8 +29,9 @@
 <!--End_Navbar-->
 
 <div class="col" style="padding-top: 1%">
+	<!--Progress bar-->
 	<div class="row-sm-12">
-		<!--Progress bar-->
+		
 		<div class="progress bg-secondary" style="height:40px">
   			<div class="progress-bar bg-dark" style="width:30%;height:40px"><h6>Responsavel</h6></div>
   			<div class="progress-bar bg-dark" style="width:20%;height:40px">
@@ -47,10 +48,11 @@
   		</div>
 
 	</div>
-		<!--End of Progress Bar-->
+	<!--End of Progress Bar-->
 
+	<!--First Card-->
 	<div class="row-sm-12" style="padding-top: 2%">
-		<div class="card card-body bg-light">
+		<div class="card card-body bg-light border-dark">
 			<form action=".php" method="POST">
 				<div class="form-inline">
 					<label for="localidade" style="padding-right: 1%">Localidade</label>
@@ -71,17 +73,70 @@
 			</form>
 		</div>
 	</div>
+	<!-- End of First Card-->
 
+	<!--Second Card-->
 	<div class="row-sm-12">
-		<div class="card card-body bg-light">
+		<div class="card card-body bg-light border-dark">
+			<form action=".php" method="POST">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="dropdown">
+  							<button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+    							Meio de transporte a utilizar:
+ 							</button>
+  							<div class="dropdown-menu">
+   					 			<a class="dropdown-item" href="#">Autocarro</a>
+    							<a class="dropdown-item" href="#">Carro</a>
+    							<a class="dropdown-item" href="#">Comboio</a>
+ 							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<label> Hora de chegada</label>	
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--End of Second Card-->
+
+	<!--Third Card-->
+	<div class="row-sm-12">
+		<div class="card card-body bg-light border-dark">
 			<form action=".php" method="POST">
 
 			</form>
 		</div>
 	</div>
+    <!--End of Third Card-->
 
-
-
+    <!--Buttons-->
+    <div class="row-sm-12">
+    	<div class="card card-body bg-light border-dark">
+    		<form action=".php" method="POST">
+    			<div class="row">
+    				<div class="col-sm-10">
+    					<div class="form-group">
+    						<button type="submit" name="submit" class="btn btn-outline-dark">Retroceder</button> 
+    					</div>
+    				</div>
+    				<div class="col-sm-1">
+    					<div class="form-group">
+         	 		  		<button type="submit" name="submit" class="btn btn-success">Continuar</button>
+        	 			</div>
+    				</div>
+    				<div class="col-sm-1">
+    					<div class="form-group">
+         	 		  		<button type="reset" name="reset" class="btn btn-danger">Limpar</button>
+        	 			</div>
+    				</div>
+    			</div>
+			</form>
+    	</div>
+    </div>
+    <!-- End of Buttons-->
 </div>
 
 
