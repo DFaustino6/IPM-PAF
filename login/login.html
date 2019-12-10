@@ -15,7 +15,7 @@
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
                 <h3 class="login-heading mb-4">Bem vindo!</h3>
-                <form class=>
+                <form method="POST" action="..\profiles">
                   <div class="form-label-group">
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
                     <label for="inputEmail">Email</label>
@@ -30,9 +30,14 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                     <label class="custom-control-label" for="customCheck1">Remember password</label>
                   </div>
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Log in</button>
                   <div class="text-center">
-                    <a class="small" href="#">Forgot password?</a></div>
+                    <a class="small" href="..\action\forgot_password.html">Esqueceu-se da password?</a>
+                  </div>
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="..\register\register.html">Se ainda nao tem conta, registe-se aqui.</a>
+                  </div>
                 </form>
               </div>
             </div>
