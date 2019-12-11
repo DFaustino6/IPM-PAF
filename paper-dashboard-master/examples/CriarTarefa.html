@@ -159,25 +159,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <h5 class="card-title">Criar Tarefa</h5>
               </div>
               <div class="card-body">
-                <form>
-                  <div class="row">
-                    <div class="col-md-5 pr-1">
-                      <div class="form-group">
-                        <label>Nome da Atividade</label>
-                        <input type="text" class="form-control" placeholder="" value="">
-                      </div>
-                    </div>
-                    <div class="col-md-7 pl-1"></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-5 pr-1">
-                      <div class="form-group">
-                        <label for="exampleInputMaterial1">Material</label>
-                        <input type="" class="form-control" placeholder="">
-                      </div>
-                    </div>
-                    <div class="col-md-7 pl-1"></div>
-                  </div>
+                <form method="POST">
                   <div class="row">
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
@@ -188,86 +170,33 @@ The above copyright notice and this permission notice shall be included in all c
                     <div class="col-md-7 pl-1"></div>
                   </div>
                   <hr>
-                  <h5 style="font-size: 19px">Sessões:</h5>
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-5">
                       <div class="form-group">
-                        <label>Campus</label>
-                        <select class="form-control">
-                          <option>Gambelas</option>
-                          <option>Penha</option>
+                        <label>Colaborador</label>
+                        <select class="form-control" value="Colaborador" required>
+                          <option value="" selected disabled>Selecione um Colaborador</option>
+                          <option>Joao Manuel</option>
+                          <option>Ana Castro</option>
+                          <option>Joana Azevedo</option>
+                          <option>Maria Alves</option>
+                          <option>David Antunes</option>
+                          <option>Ricardo Silva</option>
                         </select>
                         <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
                       </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="form-group">
-                        <label>Edificio</label>
-                        <select class="form-control">
-                          <option>Gambelas</option>
-                          <option>Penha</option>
-                        </select>
-                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="form-group">
-                        <label>Andar</label>
-                        <select class="form-control">
-                          <option>Gambelas</option>
-                          <option>Penha</option>
-                        </select>
-                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="form-group">
-                        <label>Sala</label>
-                        <select class="form-control">
-                          <option>Gambelas</option>
-                          <option>Penha</option>
-                        </select>
-                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group">
-                       <label for="exampleInputOutro1">Outro :</label>
-                        <input type="" class="form-control" placeholder="">
-                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-2">
-                      <label for="horarioDropdown">Hora de incio</label>
-                        <select class="form-control">
-                          <option>9:00</option>
-                          <option>9:30</option>
-                          <option>10:00</option>
-                          <option>10:30</option>
-                          <option>11:00</option>
-                          <option>11:30</option>
-                          <option>12:00</option>
-                          <option>14:00</option>
-                          <option>14:30</option>
-                          <option>15:00</option>
-                          <option>15:30</option>
-                          <option>16:00</option>
-                          <option>16:30</option>                                                                             
-                        </select>
                     </div>
                   </div>
                   <br>
                   <div class="row">
                     <div class="col-md-12">
-                        <a role="button" class="" href="#" style="border-bott"><i class="fal fa-plus-circle fa-lg" ></i>&nbsp;Adicionar Sessão</a>
+                        <a role="button" class="" href="#" ><i class="fal fa-plus-circle fa-lg" ></i>&nbsp;Adicionar Colaborador</a>
                     </div>
                   </div>
                   <div class="row">
                   <div class="col-sm-12">
                     <div class="text-right">
-                      <button type="submit" class="btn btn-success btn-round" onclick="window.confirm('Tem a certeza que deseja proceder?')";>Propor Atividade</button>
+                      <button type="submit" class="btn btn-success btn-round" onclick="window.confirm('Tem a certeza que deseja proceder?')";>Criar Tarefa</button>
                       <button type="submit" class="btn btn-danger btn-round">Cancel</button>
                     </div>
                   </div>
