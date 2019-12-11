@@ -45,18 +45,16 @@ The above copyright notice and this permission notice shall be included in all c
       <div class="sidebar-wrapper">
         <ul class="nav">
           <div class="author text-center">
-            <a href="#">
-              <img class="avatar border-gray" src="../assets/img/default-avatar.png" width="80%" height="80%">
-              <h5 class="title">Professor Universitario</h5>
-            </a>
+            <img class="avatar border-gray" src="../assets/img/default-avatar.png" width="80%" height="80%">
+            <h5 class="title">Professor Universitario</h5>
           </div>
-          <li class="active ">
-            <a href="./user.html">
+          <li class="ti-panel">
+            <a href="./userProfessorUniversitario.html">
               <i class="nc-icon nc-single-02"></i>
               <p>Perfil de Utilizador</p>
             </a>
           </li>
-           <li class="ti-panel">
+           <li class="active ">
             <a href="#">
               <i class="fal fa-plus-circle"></i>
               <p>Propor atividade</p>
@@ -139,14 +137,14 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-8">
             <div class="card card-user">
               <div class="card-header">
-                <h5 class="card-title">Dados de perfil</h5>
+                <h5 class="card-title">Propor Atividade</h5>
               </div>
               <div class="card-body">
                 <form>
                   <div class="row">
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
-                        <label>Nome</label>
+                        <label>Nome da Atividade</label>
                         <input type="text" class="form-control" placeholder="Username" value="Miguel Barri">
                       </div>
                     </div>
@@ -155,20 +153,40 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="row">
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" placeholder="miguelB@ualg.pt">
+                        <label for="exampleInputMaterial1">Material</label>
+                        <input type="" class="form-control" placeholder="">
                       </div>
                     </div>
                     <div class="col-md-7 pl-1"></div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-5 pr-1">
                       <div class="form-group">
-                        <label>Unidade Organica</label>
+                        <label for="exampleInputDescricao1">Descrição</label>
+                        <textarea cols="2" rows="5" class="form-control" id="post" name="content" style="resize: vertical;" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-7 pl-1"></div>
+                  </div>
+                  <hr>
+                  <h5 style="font-size: 19px">Local:</h5>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Campus</label>
                         <select class="form-control">
-                          <option>Faculdade de Ciencias e Tecnologias - FCT</option>
-                          <option>Faculdade de Economia - FE</option>
-                          <option>Faculdade de Ciências Humanas e Sociais - FCHS</option>
+                          <option>Gambelas</option>
+                          <option>Penha</option>
+                        </select>
+                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Edificio</label>
+                        <select class="form-control">
+                          <option>Gambelas</option>
+                          <option>Penha</option>
                         </select>
                         <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
                       </div>
