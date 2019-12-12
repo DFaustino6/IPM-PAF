@@ -35,6 +35,14 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Files -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <!--Time clock  -->
+  <link rel="stylesheet" type="text/css" href="../assets/distClock/bootstrap-clockpicker.min.css">
+
 </head>
    <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
@@ -129,71 +137,157 @@ The above copyright notice and this permission notice shall be included in all c
 
 
 </div> -->
-      <div class="content">
+       <div class="content">
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
             <div class="progress" style="height: 30px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Responsável
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Recolha de dados
               </div>
             </div>
           </div>
           <div class="col-md-2"></div>
-      </div>
+        </div>
         <div class="row" style="padding-top: 1.5%;">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
+          <div class="col-md-2">
+            
+          </div>
+          <div class="col-md-8">
             <div class="card card-user">
               <div class="card-header">
-                <h5 class="card-title">Responsável</h5>
+                <h5 class="card-title">Recolha de Dados</h5>
               </div>
               <div class="card-body">
-                <form>
+                <form method="POST" action="userParticipanteGrupo.html" onsubmit="return confirm('Tem a certeza que deseja proceder?')">
                   <div class="row">
-                    <div class="col-md-7 pr-1">
+                    <div class="col-md-5 pr-1">
                       <div class="form-group">
-                        <label>Nome</label>
-                        <input type="text" class="form-control" placeholder="" value="">
+                        <label>Localidade</label>
+                        <input type="text" class="form-control" placeholder="" value="" required>
                       </div>
                     </div>
-                    <div class="col-md-5 pl-1"></div>
+                    <div class="col-md-7 pl-1"></div>
                   </div>
                   <div class="row">
-                    <div class="col-md-7 pr-1">
+                    <div class="col-md-3 pr-1">
                       <div class="form-group">
-                        <label>Contacto</label>
-                        <input type="text" class="form-control" placeholder="" value="">
+                        <label for="exampleInputMaterial1">Ano</label>
+                        <select class="form-control">
+                          <option>Ano</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>                                         
+                        </select>
                       </div>
                     </div>
-                    <div class="col-md-5 pl-1"></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-7 pr-1">
+                    <div class="col-md-3 pr-1">
                       <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" class="form-control" placeholder="" value="">
+                        <label for="exampleInputMaterial1">Turma</label>
+                        <input class="form-control" id="Turma" name="Turma" style="resize: vertical;" required></input>
+                      </div>
+                    </div>                    
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputMaterial1">Area de Estudo</label>
+                        <input class="form-control" id="AreaStudy" name="AreaStudy" style="resize: vertical;" required></input>
                       </div>
                     </div>
-                    <div class="col-md-5 pl-1"></div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
-                        <a role="button" class="" href="#" ><i class="fal fa-plus-circle fa-lg" ></i>&nbsp;Adicionar Responsável</a>
+                    <div class="col-md-5 pr-1">
+                      <div class="form-group">
+                        <label for="exampleInputDescricao1">Numero de Alunos</label>
+                        <input type="number" class="form-control" id="Students" name="Students" style="resize: vertical;" required></input>
+                      </div>
+                    </div>
+                    <div class="col-md-7 pl-1"></div>
+                  </div>
+                  <hr>
+                  <h5 style="font-size: 19px">Transporte</h5>
+    
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Meio de transporte</label>
+                        <select class="form-control" required>
+                          <option>Comboio</option>
+                          <option>Autocarro</option>
+                          <option selected>Meio Proprio</option>
+                        </select>
+                        <!--<input type="text" class="form-control" placeholder="Home Address" value="Faculdade de Ciencias e Tecnologias - FCT">-->
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                            <label>Hora de Chegada</label>
+                            <input type="text" class="form-control" value="07:30">
+                      </div>
+                    </div>  
+                    <div class="col-md-4">
+                      <div class="form-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                            <label>Hora de Partida</label>
+                            <input type="text" class="form-control" value="07:30">
+                      </div>
+                    </div>                                         
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Deseja transporte entre campi?
+                        </label>
+                      </div>
                     </div>
                   </div>
+                  <hr>
+
+                  <h5 style="font-size: 19px">Almoço</h5>
+                  <div class="row"> 
+                    <div class="col-md-4">
+                      <div class="form-check-inline ">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Deseja almoçar?
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label for="horarioDropdown">Campi de almoço</label>
+                        <select class="form-control">
+                          <option>Gambelas</option>
+                          <option>Penha</option>                                                                            
+                        </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="horarioDropdown">Numero de almoços Docente</label>
+                        <input type="number" class="form-control" id="Students" name="Students" style="resize: vertical;" required></input>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="horarioDropdown">Numero de almoços Aluno</label>
+                        <input type="number" class="form-control" id="Students" name="Students" style="resize: vertical;" required></input>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
                   <div class="row">
                   <div class="col-sm-12">
                     <div class="text-right">
-                      <button type="submit" class="btn btn-success btn-round" onclick="window.confirm('Tem a certeza que deseja proceder?')";>Continuar</button>
-                      <button type="submit" class="btn btn-danger btn-round">Cancel</button>
+                      <button type="submit" class="btn btn-success btn-round">Continuar</button>
+                      <a role="button" class="btn btn-danger btn-round" href="userProfessorUniversitario.html">Cancel</a>
                     </div>
                   </div>
-                </div>  
                 </form>
               </div>
             </div>
           </div>
-          <div class="col-md-3"></div>          
+          <div class="col-md-2"></div>          
         </div>
       </div>
       <footer class="footer footer-black  footer-white ">
@@ -219,10 +313,7 @@ The above copyright notice and this permission notice shall be included in all c
       </footer>
     </div>
   </div>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js"></script>
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
+
 
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
@@ -232,6 +323,13 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+
+  <script type="text/javascript" src="../assets/distClock/bootstrap-clockpicker.min.js"></script>
+  <script type="text/javascript">
+      $('.clockpicker').clockpicker({
+        placement: 'bottom'
+      });
+  </script>
 
 </body>
 

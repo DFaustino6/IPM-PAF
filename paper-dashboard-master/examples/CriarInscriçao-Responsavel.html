@@ -148,12 +148,12 @@ The above copyright notice and this permission notice shall be included in all c
                 <h5 class="card-title">Responsável</h5>
               </div>
               <div class="card-body">
-                <form>
+                <form action="CriarInscriçao-RecolhaDados.html" method="POST" action="userProfessorUniversitario.html" onsubmit="return confirm('Tem a certeza que deseja proceder?')">
                   <div class="row">
                     <div class="col-md-7 pr-1">
                       <div class="form-group">
                         <label>Nome</label>
-                        <input type="text" class="form-control" placeholder="" value="">
+                        <input type="text" class="form-control" placeholder="" value="" required>
                       </div>
                     </div>
                     <div class="col-md-5 pl-1"></div>
@@ -162,7 +162,7 @@ The above copyright notice and this permission notice shall be included in all c
                     <div class="col-md-7 pr-1">
                       <div class="form-group">
                         <label>Contacto</label>
-                        <input type="text" class="form-control" placeholder="" value="">
+                        <input type="text" class="form-control" placeholder="" value="" required>
                       </div>
                     </div>
                     <div class="col-md-5 pl-1"></div>
@@ -171,7 +171,7 @@ The above copyright notice and this permission notice shall be included in all c
                     <div class="col-md-7 pr-1">
                       <div class="form-group">
                         <label>Email</label>
-                        <input type="email" class="form-control" placeholder="" value="">
+                        <input type="email" class="form-control" placeholder="" value="" required>
                       </div>
                     </div>
                     <div class="col-md-5 pl-1"></div>
@@ -184,7 +184,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="row">
                   <div class="col-sm-12">
                     <div class="text-right">
-                      <button type="submit" class="btn btn-success btn-round" onclick="window.confirm('Tem a certeza que deseja proceder?')";>Continuar</button>
+                      <button type="submit" class="btn btn-success btn-round">Continuar</button>
                       <button type="submit" class="btn btn-danger btn-round">Cancel</button>
                     </div>
                   </div>
