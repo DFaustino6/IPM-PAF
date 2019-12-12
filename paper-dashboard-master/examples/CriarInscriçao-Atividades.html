@@ -149,13 +149,12 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-2"></div>
         </div>
         <div class="row" style="padding-top: 1.5%;">
-          <div class="col-md-2">
-            
-          </div>
+          <div class="col-md-2"></div>
           <div class="col-md-8">
             <div class="card card-user">
               <div class="card-header">               
                 <h5 class="card-title">Atividades</h5>
+              </div>
               <div class="card-body">
                 <form method="POST" action="userParticipanteGrupo.html" onsubmit="return confirm('Tem a certeza que deseja proceder?')">
                   <div class="row">
@@ -207,46 +206,400 @@ The above copyright notice and this permission notice shall be included in all c
                       </div>
                     </div>
                   </div>
-                  <hr>
-                  <h5 style="font-size: 19px">Campus de Gambelas</h5>
-                  <br>
+                </form>
+                <hr>
+                <!-- start form -->
+                <form onsubmit="return confirm('Tem a certeza que deseja finalizar a sua inscrição?')" action="userParticipanteGrupo.html">
+                <h4 style="font-size: 19px">Campus de Gambelas</h4>
+                <h5 style="font-size: 16px">Departamento de Quimica e Farmacia</h5>
+                <div class="card" >
+                  <div class="card-body"style="border-style: solid !important;border-color: #e6e6e6 !important; border-radius: 8px">   
+                  <!-- text 1 -->                     
+                    <div class="row">
+                      <div class="col-md-5 pr-1">
+                        <div class="form-group">
+                          <style>
+                            .form-control[disabled],
+                            .form-control[readonly],
+                            fieldset[disabled] .form-control {
+                              background-color: #f3f2f1 !important;
+                              color: #66615B !important;
+                              cursor: pointer;
+                            }
+                          </style>
+                          <label>Nome</label>
+                          <input type="text" class="form-control" placeholder="Username" value="Cosmetica e medicamentos" disabled>
+                        </div>
+                      </div>
+                      <div class="col-md-7 pl-1"></div>
+                    </div>
+                    <!-- text 2 -->
+                    <div class="row">
+                      <div class="col-md-5 pr-1">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Descrição</label>
+                          <textarea cols="2" rows="5" class="form-control" id="descricao" name="descricao" style="resize: none;" disabled value="Lorem Ipsum">Lorem Ipsum</textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-7 pl-1"></div>
+                    </div>
+                    <!-- text 3 -->
+                    <div class="row">
+                      <div class="col-md-5 pr-1">
+                        <div class="form-group">
+                          <label for="exampleInputEscola">Duração</label>
+                          <input type="text" class="form-control" placeholder="Escola" value="15 minutos" disabled>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="col-md-11">
+                              <table class="table table-striped table-bordered text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hora</th>
+                                    <th scope="col">Local</th>
+                                    <th scope="col">Vagas</th>
+                                    <th scope="col">Alunos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>9:30</td>
+                                    <td>Gambelas, C2, Lab 2.21</td>
+                                    <td>7</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>10:00</td>
+                                    <td>Gambelas, C8, Lab 2.21</td>
+                                    <td>6</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>10:30</td>
+                                    <td>Gambelas, C8, Lab 2.21</td>
+                                    <td>1</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>11:00</td>
+                                    <td>Gambelas, C8, Lab 2.21</td>
+                                    <td>15</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>                          
+                                </tbody>
+                              </table>                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="col-md-11">
+                              <table class="table table-striped table-bordered text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Hora</th>
+                                    <th scope="col">Local</th>
+                                    <th scope="col">Vagas</th>
+                                    <th scope="col">Alunos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>13:30</td>
+                                    <td>Gambelas, C2, Lab 2.15</td>
+                                    <td>9</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>14:00</td>
+                                    <td>Gambelas, C8, Lab 2.15</td>
+                                    <td>12</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>14:30</td>
+                                    <td>Gambelas, C8, Lab 2.15</td>
+                                    <td>5</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>15:00</td>
+                                    <td>Gambelas, C8, Lab 2.15</td>
+                                    <td>2</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr> 
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>15:30</td>
+                                    <td>Gambelas, C8, Lab 2.21</td>
+                                    <td>5</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>                                                           
+                                </tbody>
+                              </table>                              
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>                 
+                    </div>                       
+                  </div>
+                  <!-- end of first card / start of second-->
+                  <h5 style="font-size: 16px">Departamento de Engenharia Eletronica e Informatica</h5>
+                  <div class="card" >
+                    <div class="card-body"style="border-style: solid !important;border-color: #e6e6e6 !important; border-radius: 8px">   
+                    <!-- text 1 -->                     
+                      <div class="row">
+                        <div class="col-md-5 pr-1">
+                          <div class="form-group">
+                            <style>
+                              .form-control[disabled],
+                              .form-control[readonly],
+                              fieldset[disabled] .form-control {
+                                background-color: #f3f2f1 !important;
+                                color: #66615B !important;
+                                cursor: pointer;
+                              }
+                            </style>
+                            <label>Nome</label>
+                            <input type="text" class="form-control" placeholder="Username" value="Cosmetica e medicamentos" disabled>
+                          </div>
+                        </div>
+                        <div class="col-md-7 pl-1"></div>
+                      </div>
+                      <!-- text 2 -->
+                      <div class="row">
+                        <div class="col-md-5 pr-1">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Descrição</label>
+                            <textarea cols="2" rows="5" class="form-control" id="descricao" name="descricao" style="resize: none;" disabled value="Lorem Ipsum">Lorem Ipsum</textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-7 pl-1"></div>
+                      </div>
+                      <!-- text 3 -->
+                      <div class="row">
+                        <div class="col-md-5 pr-1">
+                          <div class="form-group">
+                            <label for="exampleInputEscola">Duração</label>
+                            <input type="text" class="form-control" placeholder="Escola" value="15 minutos" disabled>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-11">
+                                <table class="table table-striped table-bordered text-center">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Hora</th>
+                                      <th scope="col">Local</th>
+                                      <th scope="col">Vagas</th>
+                                      <th scope="col">Alunos</th>
+                                    </tr>
+                                  </thead>
+                                   <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>9:30</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>7</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>10:00</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>6</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>10:30</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>1</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>11:00</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>15</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>                          
+                                </tbody>
+                                </table>                              
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-11">
+                                <table class="table table-striped table-bordered text-center">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Hora</th>
+                                      <th scope="col">Local</th>
+                                      <th scope="col">Vagas</th>
+                                      <th scope="col">Alunos</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>13:30</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>9</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>14:00</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>12</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>14:30</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>5</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>15:00</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>2</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr> 
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>15:30</td>
+                                    <td>Gambelas, C1, Sala 1.63</td>
+                                    <td>5</td>
+                                    <td>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="0" value="">
+                                      </div>         
+                                    </td>                                    
+                                  </tr>                                                           
+                                </tbody>
+                                </table>                              
+                              </div>
+                            </div>
+                          </div>                        
+                        </div>                 
+                      </div>                       
+                    </div>
+                  <!-- end of second card -->
                   <div class="row">
-                  <div class="col-sm-12">
-                    <div class="text-right">
-                      <button type="submit" class="btn btn-success btn-round">Continuar</button>
-                      <a role="button" class="btn btn-danger btn-round" href="userProfessorUniversitario.html">Cancel</a>
+                    <div class="col-sm-12">
+                      <div class="text-right">
+                        <button type="submit" class="btn btn-success btn-round">Finalizar Inscrição</button>
+                        <a role="button" class="btn btn-danger btn-round" href="userProfessorUniversitario.html">Cancel</a>
+                      </div>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-          </div>
-          <div class="col-md-2"></div>          
-        </div>
-      </div>
-      <footer class="footer footer-black  footer-white ">
-        <div class="container-fluid">
-          <div class="row">
-            <nav class="footer-nav">
-              <ul>
-                <li>
-                  <a href="#" target="_blank">Contactos</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="credits ml-auto">
-              <span class="copyright">
-                ©
-                <script>
-                  document.write(new Date().getFullYear())
-                </script>, Dia Aberto - UAlg
-              </span>
-            </div>
+           <br>
           </div>
         </div>
-      </footer>
+      </div> 
+      <!-- end content -->      
     </div>
+    <!-- end main panel -->
   </div>
+
+</div></div>
 
 
   <!--  Google Maps Plugin    -->
