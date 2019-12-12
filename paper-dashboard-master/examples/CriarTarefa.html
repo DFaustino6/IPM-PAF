@@ -159,7 +159,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <h5 class="card-title">Criar Tarefa</h5>
               </div>
               <div class="card-body">
-                <form method="POST">
+                <form method="POST" onsubmit="return confirm('Tem a certeza que deseja proceder?')" action="userCoordenador.html">
                   <div class="row">
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
@@ -196,8 +196,8 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="row">
                   <div class="col-sm-12">
                     <div class="text-right">
-                      <button type="submit" class="btn btn-success btn-round" onclick="window.confirm('Tem a certeza que deseja proceder?')";>Criar Tarefa</button>
-                      <button type="submit" class="btn btn-danger btn-round">Cancel</button>
+                      <button type="submit" class="btn btn-success btn-round">Criar Tarefa</button>
+                      <a role="button" class="btn btn-danger btn-round" href="userCoordenador.html">Cancel</a>
                     </div>
                   </div>
                 </form>
